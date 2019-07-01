@@ -48,13 +48,13 @@ END IF
 3. Laundry Day
 -----------------------------------------
 1. Simpan "clothes" dengan nilai 0
-2. Ulangi menambahkan "clothes" dengan 1 hingga "clothes" equal to 20
+2. Ulangi menambahkan "clothes" dengan 1 hingga "clothes" less than or equal to 20
 3. Tampilkan "Turn on your washer"
 
 
 STORE "clothes" with 0
 
-WHILE "clothes" less than 20
+WHILE "clothes" less than or equal to 20
     ADD "clothes" by 1
 END WHILE
 
@@ -65,7 +65,7 @@ DISPLAY "Turn on your washer"
 4. Periksa Kuku
 -----------------------------------------
 1. Simpan "student" dengan nilai 0
-2. Ulangi langkah 3, 4, 5, 6 hingga "student" less than 40
+2. Ulangi langkah 3, 4, 5, 6 hingga "student" less than or equal to 40
 3. Tampilkan "student"
 4. Jika "long nails" tampilkan "Student will get punished"
 5. Jika tidak, Tampilkan "Student will get praised"
@@ -75,7 +75,7 @@ DISPLAY "Turn on your washer"
 
 STORE "student" width 1
 
-WHILE "student" less than 40
+WHILE "student" less than or equal to 40
     DISPLAY "student"
     IF "long-nails" THEN
         DISPLAY "Student will get punished"
