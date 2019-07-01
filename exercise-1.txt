@@ -1,0 +1,94 @@
+-----------------------------------------
+1. Newton Second Law
+-----------------------------------------
+1. Simpan "mass" dengan nilai 600
+2. Simpan "acceleration" dengan nilai 2 m/s2
+3. Simpan "force" tanpa diberikan nilai
+4. Hitung hasil perkalian "mass" dengan "acceleration"
+5. Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalan "force"
+6. Tampilkan nilai dari "force"
+
+
+STORE "mass" with 600
+STORE "acceleration" with 2
+STORE "force" without any value
+
+CALCULATE "mass" times "acceleration"
+SET "force" value with calculation result
+
+DISPLAY "force"
+
+
+-----------------------------------------
+2. Tahun Kabisat
+-----------------------------------------
+1. Simpan "year" dengan nilai berapapun
+2. Simpan "result" tanpa diberikan nilai
+3. Jika tahun habis di bagi 4 dan tidak habis di bagi 100, isikan "result" dengan nilai "Leap Year" dan tampilkan nilai "result"
+4. Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400, isikan "result" dengan nilai "Leap Year" dan tampilkan nilai "result"
+5. Jika kondisi 1 dan kondisi 2 adalah false, isikan "result" dengan nilai "Not a Leap Year" dan tampilkan nilai "result"
+
+
+STORE "year" with any value
+STORE "result" without any value
+
+IF "year" mod 4 equals to 0 AND "year" mod 100 not equals to 0 THEN
+    SET "result" with value "Leap Year"
+    DISPLAY "result"
+ELSE IF "year" mod 4 equals to 0 AND "year" mod 100 equals to 0 AND "year" mod 400 equals to 0 THEN
+    SET "result" with value "Leap Year"
+    DISPLAY "result"
+ELSE 
+    SET "result" with value "Not a Leap Year"
+    DISPLAY "result"
+END IF
+
+
+-----------------------------------------
+3. Laundry Day
+-----------------------------------------
+1. Simpan "clothes" dengan nilai 0
+2. Ulangi menambahkan "clothes" dengan 1 hingga "clothes" equal to 20
+3. Tampilkan "Turn on your washer"
+
+
+STORE "clothes" with 0
+
+WHILE "clothes" less than 20
+    ADD "clothes" by 1
+END WHILE
+
+DISPLAY "Turn on your washer"
+
+
+-----------------------------------------
+4. Periksa Kuku
+-----------------------------------------
+1. Simpan "student" dengan nilai 0
+2. Ulangi langkah 3, 4, 5, 6 hingga "student" less than 40
+3. Tampilkan "student"
+4. Jika "long nails" tampilkan "Student will get punished"
+5. Jika tidak, Tampilkan "Student will get praised"
+6. Tambah "student" dengan 1
+7. Kembali ke langkah 2
+
+
+STORE "student" width 1
+
+WHILE "student" less than 40
+    DISPLAY "student"
+    IF "long-nails" THEN
+        DISPLAY "Student will get punished"
+    ELSE
+        DISPLAY "Student will get praised"
+    END IF
+    ADD "student" by 1
+END WHILE
+
+
+
+
+
+
+
+
