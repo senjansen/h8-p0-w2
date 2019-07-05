@@ -1,13 +1,13 @@
-var tanggal = 1; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
-var bulan = 1; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
-var tahun = 1945; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
+var tanggal = 8; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
+var bulan = 6; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
+var tahun = 2018; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
 if (tanggal < 1 || tanggal > 31) {
-    tanggal = '\'Tanggal Salah\'';
+    tanggal = 'Tanggal angka antara 1 - 31';
 } 
 
 if (tahun < 1900 || tahun > 2200) {
-    tahun = '\'Tahun Salah\'';
+    tahun = 'Tahun antara 1900 - 2200';
 }
 
 switch (bulan) {
@@ -48,7 +48,7 @@ switch (bulan) {
         bulan = 'Desember';
         break;
     default:
-        bulan = 'Bulan Salah';
+        bulan = 'Bulan antara 1 - 12';
         break;
 }
 
